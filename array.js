@@ -138,24 +138,12 @@ main();
 
 // Merge Arrays
 const merge = (arr1, arr2) => {
-    mergedArr = [];
-    currentIndex1 = 0;
-    currentIndex2 = 0;
-    
-    while(currentIndex1 <= arr1.length && currentIndex2 <= arr2.length) {
-        if(arr1[currentIndex1] < arr2[currentIndex2]) {
-            mergedArr.push(arr1[currentIndex1]);
-            console.log(currentIndex1)
-            currentIndex1++
-        }
-        else {
-            mergedArr.push(arr2[currentIndex2]);
-            console.log(currentIndex1)
-            currentIndex2++
-        }
-    }
+   const mergedArr = [];
+   let currentIndex1 = 0;
+   let currentIndex2 = 0;
 
-    return mergedArr;
+   while() {
+       
+   }
 }
-console.log(3 < undefined)
 console.log(merge([1,3,6,8,11],[2,3,5,8,9,10]))
