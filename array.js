@@ -90,3 +90,72 @@ function main(){
 }
 
 main();
+
+// URLify a string
+// const urlify = string => {
+//     let newString = '';
+//     for(i = 0; i < string.length; i++) {
+//         if(string[i] === ' ') {
+//             newString += '%20';
+//         } else newString += string[i]
+//     }
+//     return newString
+// }
+// console.log(urlify('some string'))
+
+// Filtering an array
+// const filter = arr => {
+//     let newArr = [];
+//     for(i = 0; i < arr.length; i++) {
+//         if(arr[i] >= 5) {
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr;
+// }
+// console.log(filter([1,2,3,4,5,6,7]))
+
+// Max sum in the array
+// const maxSum = (arr) => {
+//     let currentSum = 0;
+//     let maxSum = 0;
+//     for(i = 0; i < arr.length; i++) {
+
+//         if(arr[i] + currentSum < 0) {
+//             currentSum = 0;
+//         }
+
+//         else {
+//             currentSum += arr[i];
+//             if(currentSum > maxSum) {
+//                 maxSum = currentSum;
+//             }
+//         }
+//     }   
+//     return maxSum;
+// }
+// console.log(maxSum([4,6,-13,5,-2,3]));
+
+// Merge Arrays
+const merge = (arr1, arr2) => {
+    mergedArr = [];
+    currentIndex1 = 0;
+    currentIndex2 = 0;
+    
+    while(currentIndex1 <= arr1.length && currentIndex2 <= arr2.length) {
+        if(arr1[currentIndex1] < arr2[currentIndex2]) {
+            mergedArr.push(arr1[currentIndex1]);
+            console.log(currentIndex1)
+            currentIndex1++
+        }
+        else {
+            mergedArr.push(arr2[currentIndex2]);
+            console.log(currentIndex1)
+            currentIndex2++
+        }
+    }
+
+    return mergedArr;
+}
+console.log(3 < undefined)
+console.log(merge([1,3,6,8,11],[2,3,5,8,9,10]))
